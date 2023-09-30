@@ -18,10 +18,10 @@ const Stack = createNativeStackNavigator();
 
 function BottomTabNavigator() {
   return (
-    <Tab.Navigator initialRouteName='Home'  >
-      <Tab.Screen name="Lists"   options={{headerTitle:"لیست یادداشت ها",headerTitleAlign:"center",tabBarLabelStyle:{fontSize:13},tabBarLabel:"لیست یادداشت ها",tabBarIcon:()=><Entypo name="list" size={24} color="black" />}} component={ListScreen} />
-      <Tab.Screen name="Home" options={{headerTitle:"خانه",headerTitleAlign:"center",tabBarLabel:"خانه",tabBarIcon:()=><AntDesign name="home" size={24} color="black" />}} component={HomeScreen} />
-      <Tab.Screen name="Settings" options={{headerTitle:"تنظیمات",headerTitleAlign:"center",tabBarLabel:"تنظیمات",tabBarIcon:()=><Ionicons name="options" size={24} color="black" />}}  component={SettingsScreen} />
+    <Tab.Navigator initialRouteName='Home'>
+      <Tab.Screen name="Lists"   options={{headerTitle:"لیست یادداشت ها",headerTitleAlign:"center",tabBarLabelStyle:{fontSize:14},tabBarLabel:"لیست یادداشت ها",tabBarIcon:()=><Entypo name="list" size={24} color="black" />}} component={ListScreen} />
+      <Tab.Screen name="Home" options={{headerTitle:"خانه",headerTitleAlign:"center",tabBarLabel:"خانه",tabBarLabelStyle:{fontSize:14},tabBarIcon:()=><AntDesign name="home" size={24} color="black" />}} component={HomeScreen} />
+      <Tab.Screen name="Settings" options={{headerTitle:"تنظیمات",headerTitleAlign:"center",tabBarLabelStyle:{fontSize:14},tabBarLabel:"تنظیمات",tabBarIcon:()=><Ionicons name="options" size={24} color="black" />}}  component={SettingsScreen} />
       
     </Tab.Navigator>
   );
